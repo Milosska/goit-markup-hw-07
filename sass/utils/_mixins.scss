@@ -1,7 +1,7 @@
 /* ================= line height calculation ===============*/
 @mixin font-size($size, $height) {
   font-size: $size;
-  line-height: $size / $height;
+  line-height: $height / $size;
 }
 
 /* ================= flex patterns ===============*/
@@ -26,4 +26,29 @@
 /* ================= animation pattern ===============*/
 @mixin animation($property) {
   transition: $property $animation;
+}
+
+/* ================= svg pattern ===============*/
+@mixin svg($width, $height) {
+  width: $width;
+  height: $height;
+  fill: currentColor;
+}
+
+/* =================== social links icons =================*/
+@mixin socials($bgcolor, $hoverbg) {
+  @include flex-m;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: $bgcolor;
+  fill: currentColor;
+
+  @include animation(color);
+  @include animation(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: $hoverbg;
+  }
 }

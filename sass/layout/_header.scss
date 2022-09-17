@@ -91,9 +91,7 @@
 }
 
 .contacts__icon {
-  width: 16px;
-  height: 12px;
-  fill: currentColor;
+  @include svg(16px, 12px);
   margin-right: 10px;
 
   &:last-child {
