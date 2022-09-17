@@ -41,13 +41,18 @@ button {
   font-style: normal;
 }
 
-.hero__container, .footer__container, .header__container {
+.benefits__container, .hero__container, .footer__container, .header__container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-.connections__list, .address__list, .contacts, .nav__list {
+.benefits {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.benefits__list, .connections__list, .address__list, .contacts, .nav__list {
   list-style: none;
   margin: 0;
   padding-left: 0;
@@ -60,17 +65,32 @@ button {
 }
 
 /* =================== visually-hidden =================*/
+.benefits__header {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* =================== centerd element pattern =================*/
 .hero__title, .hero {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* ================= line height calculation ===============*/
-/* ================= flex patterns ===============*/
-/* ================= animation pattern ===============*/
-/* ================= svg pattern ===============*/
-/* =================== social links icons =================*/
+/* ====================== line height calculation =======================*/
+/* ============================ flex patterns ===========================*/
+/* ============================= animation pattern =======================*/
+/* =============================== svg pattern ============================*/
+/* ============================ pseudoelement pattern ======================*/
+/* ============================ social links icons ==========================*/
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -433,4 +453,69 @@ button {
   line-height: 1.875;
   text-align: center;
   letter-spacing: 0.06em;
+}
+
+.benefits {
+  background-color: #ffffff;
+}
+
+.benefits__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.benefits__item {
+  width: calc(100% - 22.5px);
+}
+.benefits__item:not(:last-child) {
+  margin-right: 30px;
+}
+.benefits__item::before {
+  content: "";
+  width: 270px;
+  height: 120px;
+  display: inline-block;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 70px 70px;
+}
+
+.benefits__antenna::before {
+  background-image: url("../../images/audvantages/antenna.svg");
+}
+
+.benefits__clock::before {
+  background-image: url("../../images/audvantages/clock.svg");
+}
+
+.benefits__diagram::before {
+  background-image: url("../../images/audvantages/diagram.svg");
+}
+
+.benefits__astronaut::before {
+  background-image: url("../../images/audvantages/astronaut.svg");
+}
+
+.benefits__headline {
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  color: #212121;
+}
+
+.benefits__text {
+  font-size: 14px;
+  line-height: 1.7142857143;
 }/*# sourceMappingURL=main.css.map */

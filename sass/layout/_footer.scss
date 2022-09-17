@@ -47,7 +47,7 @@
   margin-bottom: 20px;
 
   font-weight: 700;
-  @include font-size(14px, 16px);
+  @include font-size();
   text-transform: uppercase;
   color: map-get($txtcolor, 'effects');
 }
@@ -71,7 +71,7 @@
   margin-bottom: 20px;
 
   font-weight: 700;
-  @include font-size(14px, 16px);
+  @include font-size();
   text-transform: uppercase;
   color: map-get($txtcolor, 'effects');
 }

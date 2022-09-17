@@ -1,10 +1,10 @@
-/* ================= line height calculation ===============*/
-@mixin font-size($size, $height) {
+/* ====================== line height calculation =======================*/
+@mixin font-size($size: 14px, $height: 16px) {
   font-size: $size;
   line-height: $height / $size;
 }
 
-/* ================= flex patterns ===============*/
+/* ============================ flex patterns ===========================*/
 @mixin flex-s($y: center) {
   display: flex;
   align-items: $y;
@@ -23,19 +23,26 @@
   align-items: $y;
 }
 
-/* ================= animation pattern ===============*/
+/* ============================= animation pattern =======================*/
 @mixin animation($property) {
   transition: $property $animation;
 }
 
-/* ================= svg pattern ===============*/
+/* =============================== svg pattern ============================*/
 @mixin svg($width, $height) {
   width: $width;
   height: $height;
   fill: currentColor;
 }
 
-/* =================== social links icons =================*/
+/* ============================ pseudoelement pattern ======================*/
+@mixin pseudo($width, $height) {
+  content: '';
+  width: $width;
+  height: $height;
+}
+
+/* ============================ social links icons ==========================*/
 @mixin socials($bgcolor, $hoverbg) {
   @include flex-m;
   width: 44px;
