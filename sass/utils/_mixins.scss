@@ -49,9 +49,7 @@
   height: 44px;
   border-radius: 50%;
   background-color: $bgcolor;
-  fill: currentColor;
 
-  @include animation(color);
   @include animation(background-color);
 
   &:hover,
