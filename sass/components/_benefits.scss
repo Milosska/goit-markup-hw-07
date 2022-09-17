@@ -45,7 +45,7 @@ $pictureList: 'antenna', 'clock', 'diagram', 'astronaut';
   text-transform: uppercase;
   font-weight: 700;
   @include font-size();
-  color: map-get($txtcolor, 'advantages');
+  color: map-get($txtcolor, 'header');
 }
 
 .benefits__text {

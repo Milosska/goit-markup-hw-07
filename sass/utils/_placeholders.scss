@@ -44,3 +44,12 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+/* =================== section heading pattern =================*/
+%heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: map-get($txtcolor, 'header');
+}
