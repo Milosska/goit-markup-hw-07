@@ -1,0 +1,29 @@
+/* ================= line height calculation ===============*/
+@mixin font-size($size, $height) {
+  font-size: $size;
+  line-height: $size / $height;
+}
+
+/* ================= flex patterns ===============*/
+@mixin flex-s($y: center) {
+  display: flex;
+  align-items: $y;
+}
+
+@mixin flex-m($x: center, $y: center) {
+  display: flex;
+  justify-content: $x;
+  align-items: $y;
+}
+
+@mixin flex-l($gap, $x: center, $y: center) {
+  display: flex;
+  gap: $gap;
+  justify-content: $x;
+  align-items: $y;
+}
+
+/* ================= animation pattern ===============*/
+@mixin animation($property) {
+  transition: $property $animation;
+}
