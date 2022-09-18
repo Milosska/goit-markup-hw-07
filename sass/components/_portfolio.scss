@@ -1,0 +1,22 @@
+.portfolio {
+  @extend %section;
+}
+.portfolio__container {
+  @extend %container;
+}
+.portfolio__title {
+  @extend %visually-hidden;
+}
+
+/* ==================== buttons list ================ */
+.buttons {
+  @extend %list;
+}
+
+/* ==================== works list ================ */
+.works {
+  @extend %list;
+}
+.works__link {
+  @extend %link;
+}
