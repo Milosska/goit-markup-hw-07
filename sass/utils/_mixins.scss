@@ -30,9 +30,17 @@
   left: $left;
 }
 
-/* ============================= animation pattern =======================*/
+/* ============================= animation patterns =======================*/
 @mixin animation($property) {
   transition: $property $animation;
+}
+
+@mixin animation-m($property-1, $property-2) {
+  transition: $property-1 $animation, $property-2 $animation;
+}
+
+@mixin animation-l($property-1, $property-2, $property-3) {
+  transition: $property-1 $animation, $property-2 $animation, $property-3 $animation;
 }
 
 /* =============================== svg pattern ============================*/
