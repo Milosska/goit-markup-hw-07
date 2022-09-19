@@ -43,6 +43,7 @@
 .social__link {
   @extend %link;
   @include socials(map-get($bgcolor, 'main'), map-get($decolors, 'btn-accent'));
+  color: map-get($decolors, 'social-icons');
 }
 .social__icon {
   width: 20px;

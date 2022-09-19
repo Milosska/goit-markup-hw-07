@@ -28,6 +28,7 @@
 }
 .nav__item {
   position: relative;
+  color: map-get($txtcolor, 'header');
 
   &:not(:last-child) {
     margin-right: 50px;

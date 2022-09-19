@@ -148,6 +148,7 @@ button {
 
 .nav__item {
   position: relative;
+  color: #212121;
 }
 .nav__item:not(:last-child) {
   margin-right: 50px;
@@ -762,6 +763,7 @@ button {
 }
 
 .activities {
+  padding-top: 0;
   background-color: #ffffff;
 }
 
@@ -884,6 +886,7 @@ button {
   background-color: #ffffff;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #afb1b8;
 }
 .social__link:hover, .social__link:focus {
   background-color: #2196f3;

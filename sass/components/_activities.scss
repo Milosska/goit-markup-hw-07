@@ -1,5 +1,6 @@
 .activities {
   @extend %section;
+  padding-top: 0;
   background-color: map-get($bgcolor, 'main');
 }
 .activities__container {
